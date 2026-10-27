@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-10-27T08:33:08.130Z",
+  "today": {
+    "date": "2026-10-27",
+    "total_patients": 0,
+    "films_queued": 1,
+    "films_printed": 1,
+    "films_saved": 0,
+    "disks_burned": 0,
+    "updated_at": "2026-10-27T08:33:07.773Z"
+  },
+  "totals": {
+    "totalQueued": 1,
+    "totalPrinted": 1,
+    "totalSaved": 0,
+    "totalDisks": 0
+  },
+  "history": [
+    {
+      "date": "2026-10-27",
+      "total_patients": 0,
+      "films_queued": 1,
+      "films_printed": 1,
+      "films_saved": 0,
+      "disks_burned": 0,
+      "updated_at": "2026-10-27T08:33:07.773Z"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>MRT Radiologiya Hisobotlari — Onkologiya Markazi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { background-color: #0b1120; color: #f1f5f9; font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+  <div class="max-w-6xl mx-auto space-y-6">
+    <!-- Header -->
+    <header class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="p-3 bg-cyan-500/10 text-cyan-400 rounded-xl text-2xl"><i class="fa-solid fa-hospital"></i></span>
+          <div>
+            <h1 class="text-xl md:text-2xl font-bold tracking-tight text-white">Respublika Onkologiya Markazi</h1>
+            <p class="text-slate-400 text-sm">Siemens Altea MRT, Fuji DryPix 2000 & 6-Diskovod Tizimi Hisoboti</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-right">
+        <span class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs rounded-full font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Jonli Hisobot
+        </span>
+        <div class="text-xs text-slate-500 mt-1">Yangilandi: 27.10.2026 13:33</div>
+      </div>
+    </header>
+
+    <!-- Asosiy Ko'rsatkichlar (KPI Cards) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-2xl">
+        <div class="flex justify-between items-center text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider">Bugungi Plonkalar</span>
+          <i class="fa-solid fa-film text-cyan-400"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-white">1</div>
+        <div class="text-xs text-slate-400 mt-1">Siemens Altea yuborgan</div>
+      </div>
+
+      <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-2xl">
+        <div class="flex justify-between items-center text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider">Chop Etildi</span>
+          <i class="fa-solid fa-print text-indigo-400"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-indigo-400">1</div>
+        <div class="text-xs text-slate-400 mt-1">Fuji DryPix 2000 ga chiqqan</div>
+      </div>
+
+      <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-2xl">
+        <div class="flex justify-between items-center text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider">Tejab Qolindi</span>
+          <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-emerald-400">0</div>
+        <div class="text-xs text-slate-400 mt-1">Ortiqcha xarajat oldi olindi</div>
+      </div>
+
+      <div class="bg-slate-900/80 border border-slate-800 p-5 rounded-2xl">
+        <div class="flex justify-between items-center text-slate-400 mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider">Yozilgan Disklar</span>
+          <i class="fa-solid fa-compact-disc text-amber-400"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-amber-400">0</div>
+        <div class="text-xs text-slate-400 mt-1">6 ta diskovod orqali</div>
+      </div>
+    </div>
+
+    <!-- Tarixiy Jadval -->
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+      <div class="p-5 border-b border-slate-800 flex justify-between items-center">
+        <h2 class="font-bold text-white text-base">📊 Oxirgi Kunlar Dinamikasi</h2>
+        <span class="text-xs text-slate-400">1 kunlik ma'lumot</span>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm text-slate-300">
+          <thead class="bg-slate-800/50 text-xs uppercase text-slate-400 font-semibold">
+            <tr>
+              <th class="p-4">Sana</th>
+              <th class="p-4">Siemens Plonkalari</th>
+              <th class="p-4">DryPix 2000 Chop Etilgan</th>
+              <th class="p-4">Tejab Qolingan Plonka</th>
+              <th class="p-4">Yozilgan CD/DVD</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60">
+            
+              <tr class="hover:bg-slate-800/30 transition-colors">
+                <td class="p-4 font-mono font-medium text-white">2026-10-27</td>
+                <td class="p-4 text-cyan-400 font-semibold">1</td>
+                <td class="p-4 text-indigo-400 font-semibold">1</td>
+                <td class="p-4 text-emerald-400 font-semibold">0</td>
+                <td class="p-4 text-amber-400 font-semibold">0</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs text-slate-500 py-4">
+      Respublika Onkologiya Markazi Radiodiagnostika Bo'limi &bull; GitHub Pages Orqali Xavfsiz Xosting
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+node_modules/
+storage/data/*.db
+storage/data/*.db-wal
+storage/data/*.db-shm
+storage/temp_burn/*
+storage/previews/*
+!storage/previews/.gitkeep
+!storage/data/.gitkeep
+!storage/temp_burn/.gitkeep
+.env

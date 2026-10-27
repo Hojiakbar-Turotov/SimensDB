@@ -1,0 +1,173 @@
+# 🏥 KARMED TIZIMI BILAN ISHLASH VA MA'LUMOTLARNI OLISH BO'YICHA TO'LIQ QO'LLANMA
+
+Ushbu qo'llanma **Karmed Radiologiya Kalkulyatori** dasturining Karmed LBYS (Laboratoriya va Bemorlarni Boshqarish Axborot Tizimi) bilan qanday integratsiya qilingani, tizimga kirish, bemor ma'lumotlarini qidirish, laboratoriya tahlillari va narxlarni hisoblash tartibini to'liq tushuntirib beradi.
+
+---
+
+## 1. Dastur Papkasi Strukturasi
+
+Portativ kalkulyator quyidagi toza va qulay tartibda tuzilgan:
+
+```text
+📁 Karmed_Radiologiya_Kalkulyatori/
+│
+├── 🚀 kalkulate.exe        <-- Dasturni ishga tushirish fayli (bosing va brauzer ochiladi)
+├── 🔑 keys.json            <-- Karmed login va paroli saqlanadigan xavfsiz fayl
+├── 📖 karmed.me            <-- Karmed tizimi bo'yicha to'liq qo'llanma (ushbu fayl)
+│
+└── 📁 main/                <-- Dasturning barcha asosiy va ichki fayllari
+    ├── node.exe            <-- Portativ Node.js dvigateli
+    ├── calculator_server.js<-- Kalkulyator server kodi (Port: 7777)
+    ├── silent_start.vbs    <-- Orqa fonda sokin ishga tushirish skripti
+    ├── Toxtatish.bat       <-- Serverni to'xtatish skripti
+    ├── 📁 public/          <-- Veb-interfeys fayllari (calculator.html)
+    └── 📁 data/            <-- Preyskurant va xizmatlar katalogi (JSON)
+```
+
+---
+
+## 2. Karmed Tarmoq Manzillari va Ulanish
+
+Dastur Karmed tizimiga avtomatik ulanish uchun 2 ta server manzilidan foydalanadi:
+
+| Manzil Turi | Server IP va Port | Izoh |
+| :--- | :--- | :--- |
+| **Asosiy (LAN)** | `http://192.168.150.111:2025` | Markaz ichki lokal tarmog'i (Tezkor va barqaror) |
+| **Zaxira (WAN)** | `http://213.230.91.59:2025` | Tashqi internet orqali ulanish (Masofaviy kirish) |
+
+> ℹ️ **Avtomatik almashish**: Dastur avval asosiy ichki manzilga ulanishga harakat qiladi. Agar ichki tarmoq uzilgan bo'lsa, avtomatik ravishda zaxira manzilga o'tadi.
+
+---
+
+## 3. `keys.json` — Kirish Kalitlarini Sozlash
+
+Karmed tizimiga kirish login va paroli asosiy papkada joylashgan `keys.json` faylida saqlanadi:
+
+```json
+{
+  "username": "R5",
+  "password": "17720"
+}
+```
+
+### Kalitlarni o'zgartirish tartibi:
+1. `keys.json` faylini istalgan matn muharriri (Notepad / Bloknot) bilan oching.
+2. `username` qismiga yangi loginingizni kiriting (masalan: `"R5"`).
+3. `password` qismiga yangi parolingizni kiriting (masalan: `"17720"`).
+4. Faylni saqlang (`Ctrl + S`).
+5. Dastur keyingi so'rovdan boshlab yangi kalitlar bilan avtomatik kiradi (dasturni qayta o'rnatish shart emas!).
+
+---
+
+## 4. Karmedga Avtomatik Kirish (Autentifikatsiya) Qanday Ishlaydi?
+
+Karmed tizimi murakkab ASP.NET va Ext.NET himoya mexanizmlariga ega. Kalkulyator ushbu jarayonni foydalanuvchiga bildirmasdan, orqa fonda 5 bosqichda to'liq avtomatik amalga oshiradi:
+
+```
+[1. Boshlang'ich So'rov]  ---> GET  /Login/Login.aspx?returnUrl=... (Cookie va Yashirin token olinadi)
+          ↓
+[2. Token Olish]          ---> POST /Karmed/Default.aspx (Xavfsizlik hdToken olinadi)
+          ↓
+[3. Index Konfiguratsiya] ---> POST /Login/Login.aspx (hdnDataIndexInfo shakllanadi)
+          ↓
+[4. Login Tasdiqlash]     ---> POST /Login/Login.aspx (action=MakeLogin, username va password uzatiladi)
+          ↓
+[5. Sessiyani Faollash]   ---> POST /Radiology/Rbys.aspx (userInfo tasdiqlanib, to'liq sessiya ochiladi)
+```
+
+- **Sessiya muddati**: Tizim ochilgan sessiyani xotirada eslab qoladi.
+- **Avto-Yangilanish (Auto-Refresh)**: Agar sessiya muddati tugasa, server avtomatik ravishda yangi sessiya ochadi va uzilish bo'lmaydi.
+
+---
+
+## 5. Karmeddan Bemor Ma'lumotlarini Qidirish
+
+Veb-interfeysda bemorning **ID raqami** (Dosya No) kiritilib, qidiruv tugmasi bosilganda:
+
+1. **Bemor shaxsiy ma'lumotlari**:
+   - Familiyasi, ismi va sharifi (F.I.SH).
+   - Tug'ilgan sanasi va to'liq yoshi.
+   - Jinsi (Erkak / Ayol).
+   - Bog'lanish telefon raqami.
+   - Bemor toifasi (Ambulator, Statsionar, Sug'urta, Imtiyozli).
+
+2. **MRT va MSKT Tekshiruvlari ro'yxati**:
+   - Bemorga buyurilgan barcha tekshiruvlar kodi va nomi.
+   - Protokol raqami (Protokol No).
+   - Yo'llanma berilgan sana va vaqt.
+   - Yo'llanma bergan shifokor va bo'lim nomi.
+
+---
+
+## 6. Qat'iy Tibbiy Muddat Qoidalari (5 va 10 Kun)
+
+Radiodiagnostika xavfsizligi va tibbiy talablarga asosan dastur quyidagi qoidalarni avtomatik tekshiradi:
+
+- 🟡 **5 kundan oshgan tekshiruvlar**:
+  - Sariq ogohlantirish belgisi ko'rsatiladi: *"Diqqat: Yo'llanma berilganiga 5 kundan oshgan! Bemor holati o'zgargan bo'lishi mumkin."*
+- 🔴 **10 kundan oshgan tekshiruvlar**:
+  - Qizil taqiq belgisi ko'rsatiladi: *"Muddati o'tgan! Yo'llanma berilganiga 10 kundan oshganligi sababli qayta tekshiruv talab etiladi."*
+
+---
+
+## 7. Laboratoriya Tahlillari (Biokimyo) Integratsiyasi
+
+Agar tekshiruv **Kontrast moddasi** bilan o'tkazilishi rejalashtirilgan bo'lsa, buyrak faoliyati ko'rsatkichlari juda muhimdir. Dastur Karmed laboratoriyasidan quyidagi tahlillarni avtomatik tortadi:
+
+1. **Qon zardobida Kreatinin**:
+   - Me'yoriy referens: `44 - 115 mkmol/l`
+   - Agar ko'rsatkich normadan yuqori bo'lsa, qizil rangda ogohlantirish chiqadi.
+2. **Qon zardobida Mochevina**:
+   - Me'yoriy referens: `2.5 - 8.3 mmol/l`
+3. **Tahlil topshirilgan sana**:
+   - Tahlil muddati o'tmaganligi (oxirgi 1 oy ichida o'tkazilgani) tekshiriladi.
+
+> 💡 *Agar tahlil tashqi xususiy laboratoriyada topshirilgan bo'lsa, registrator ko'rsatkichlarni qo'lda kiritishi mumkin.*
+
+---
+
+## 8. Narxlar va Xizmatlar Kalkulyatsiyasi
+
+Kalkulyator markazning rasmiy preyskuranti (`data/mrt_price_catalog.json`) asosida ishlaydi:
+
+- **Bitta tekshiruv**: Standart tarif bo'yicha hisoblanadi.
+- **Birgalikda o'tkaziladigan tekshiruvlar (To'plam)**:
+  - Agar bemorga 2 yoki undan ortiq soha (masalan: Bosh miya + Bo'yin MRT) buyurilgan bo'lsa, seans vaqti va narxlar avtomatik optimallashtiriladi.
+- **Kontrast moddasi**:
+  - Kontrastli tekshiruvlarda injektor va kontrast narxi alohida qo'shiladi.
+- **Kassa va To'lov holati**:
+  - Bemor to'lov qilganligi (Kassa / Vezne tasdiqlangani) tekshiriladi.
+
+---
+
+## 9. Dasturni Ishga Tushirish va Boshqarish
+
+### Dasturni yoqish:
+- Asosiy papkadagi **`kalkulate.exe`** faylini ikki marta bosing.
+- Dastur orqa fonda serverni ishga tushiradi (qora konsol oynasi chiqmaydi) va avtomatik ravishda brauzeringizda ochiladi:
+  👉 **`http://localhost:7777`**
+
+### Dasturni to'xtatish:
+- Agar serverni to'xtatish kerak bo'lsa:
+  1. `main/Toxtatish.bat` faylini bosing, yoki
+  2. Buyruqlar satrida `kalkulate.exe /stop` deb yozing.
+
+---
+
+## 10. Keng Tarqalgan Muammolar va Ularning Yechimi (FAQ)
+
+### 1. "Karmed bilan aloqa yo'q / Server ulanmadi"
+- **Sababi**: Shifoxona lokal tarmog'i kabeli uzilgan yoki Karmed serveri vaqtincha profilaktikada.
+- **Yechim**: Tarmoq kabelini tekshiring, brauzer orqali `http://192.168.150.111:2025` ochilishini sinab ko'ring.
+
+### 2. "Login yoki parol noto'g'ri"
+- **Sababi**: `keys.json` faylidagi foydalanuvchi paroli eskirgan yoki noto'g'ri kiritilgan.
+- **Yechim**: `keys.json` faylini ochib, amaldagi login va parolni tekshirib to'g'rilang.
+
+### 3. "Port 7777 band / Server ishga tushmadi"
+- **Sababi**: Kalkulyator jarayoni oldingi ochilishdan keyin fonda qolib ketgan.
+- **Yechim**: `main/Toxtatish.bat` faylini bir marta bosing va keyin yana `kalkulate.exe` ni ishga tushiring.
+
+---
+
+*Hujjat tuzildi: 2026-yil. Respublika Onkologiya Markazi Radiodiagnostika Bo'limi.*
