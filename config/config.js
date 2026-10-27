@@ -14,9 +14,10 @@ module.exports = {
     aeTitle: process.env.DICOM_SCP_AET || 'ALTEA_SPOOLER'
   },
   fujiPrinter: {
-    ip: process.env.FUJI_PRINTER_IP || '192.168.1.20',
+    ip: process.env.FUJI_PRINTER_IP || '10.34.14.12',
     port: parseInt(process.env.FUJI_PRINTER_PORT, 10) || 104,
-    aeTitle: process.env.FUJI_PRINTER_AET || 'DRYPIX2000'
+    aeTitle: process.env.FUJI_PRINTER_AET || 'DRYPIX2',
+    callingAeTitle: process.env.CALLING_AET || 'MRT1'
   },
   pacs: {
     ip: process.env.PACS_IP || '192.168.150.111',

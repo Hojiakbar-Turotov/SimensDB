@@ -50,9 +50,11 @@ npm start
 * **AE Title**: `ALTEA_SPOOLER`
 
 ### 2. Fujifilm DryPix 2000 Printerida:
-* **IP Address**: `192.168.1.20` (yoki `.env` dagi `FUJI_PRINTER_IP`)
-* **Port**: `104`
-* **AE Title**: `DRYPIX2000`
+* **IP Address**: `10.34.14.12`
+* **Port**: `104` (DICOM Basic Grayscale Print Management)
+* **Called AE Title**: `DRYPIX2` (Katta harflarda, aniq kiritilishi shart)
+* **Calling AE Title**: `MRT1`
+* **Web Boshqaruv / PC-Utility**: `http://10.34.14.12:20051/USER/Login.htm`
 
 ---
 
