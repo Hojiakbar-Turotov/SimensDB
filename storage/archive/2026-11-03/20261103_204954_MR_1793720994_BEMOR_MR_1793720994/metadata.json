@@ -1,0 +1,28 @@
+{
+  "job_uid": "JOB_AGENT_TEST_1793720992",
+  "source_clinic": "SAMARQAND VILOYAT ONKOLOGIYA DISPANSERI",
+  "source_modality": "SIEMENS MAGNETOM ALTEA (MRT 2)",
+  "calling_aet": "SAM_MRT2",
+  "created_at": "2026-11-03T20:49:54.489330",
+  "patient": {
+    "patient_id": "MR_1793720994",
+    "sample_no": "",
+    "patient_name": "",
+    "patient_dob": "",
+    "patient_gender": "",
+    "study_date": "2026-11-03",
+    "study_time": "20:49:54",
+    "protocol_no": "",
+    "phone_number": ""
+  },
+  "film": {
+    "format": "STANDARD\\1,1",
+    "size": "14INX17IN",
+    "orientation": "PORTRAIT",
+    "copies": 1,
+    "cols": 1,
+    "rows": 1,
+    "total_frames": 0
+  },
+  "frames": []
+}

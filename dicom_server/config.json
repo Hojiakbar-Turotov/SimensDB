@@ -1,0 +1,26 @@
+{
+  "server": {
+    "listen_ip": "0.0.0.0",
+    "listen_port": 1005,
+    "ae_title": "DRYPIX2",
+    "web_port": 3000
+  },
+  "printer": {
+    "ip": "10.34.14.12",
+    "port": 104,
+    "called_ae": "DRYPIX2",
+    "calling_ae": "MRT1",
+    "timeout_sec": 15
+  },
+  "storage": {
+    "archive_dir": "storage/archive",
+    "db_path": "storage/data/print_spooler.db"
+  },
+  "options": {
+    "auto_forward_to_printer": false,
+    "save_raw_dicom": true,
+    "save_preview_images": true,
+    "hospital_name": "RESPUBLIKA ONKOLOGIYA VA RADIOLOGIYA MARKAZI",
+    "modality_name": "SIEMENS MAGNETOM ALTEA (1.5T)"
+  }
+}

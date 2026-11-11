@@ -1,21 +1,57 @@
 {
-  "generatedAt": "2026-10-27T08:40:17.553Z",
+  "generatedAt": "2026-11-11T18:00:12.331843",
+  "period": {
+    "date": "2026-11-11",
+    "start_date": "2026-11-11",
+    "end_date": "2026-11-11",
+    "mrt_patients": 42,
+    "mrt_total": 77,
+    "mskt_patients": 95,
+    "mskt_total": 116,
+    "films_queued": 6,
+    "films_printed": 0,
+    "films_saved": 6,
+    "disks_burned": 0,
+    "delivered": 0,
+    "updated_at": "2026-11-11T18:00:12.331639"
+  },
   "today": {
-    "date": "2026-10-27",
-    "total_patients": 0,
-    "films_queued": 1,
-    "films_printed": 1,
-    "films_saved": 0,
-    "disks_burned": 2,
-    "updated_at": "2026-10-27T08:33:18.707Z"
+    "date": "2026-11-11",
+    "start_date": "2026-11-11",
+    "end_date": "2026-11-11",
+    "mrt_patients": 42,
+    "mrt_total": 77,
+    "mskt_patients": 95,
+    "mskt_total": 116,
+    "films_queued": 6,
+    "films_printed": 0,
+    "films_saved": 6,
+    "disks_burned": 0,
+    "delivered": 0,
+    "updated_at": "2026-11-11T18:00:12.331639"
   },
   "totals": {
-    "totalQueued": 1,
+    "totalQueued": 7,
     "totalPrinted": 1,
-    "totalSaved": 0,
+    "totalSaved": 6,
     "totalDisks": 2
   },
   "history": [
+    {
+      "date": "2026-11-11",
+      "start_date": "2026-11-11",
+      "end_date": "2026-11-11",
+      "mrt_patients": 42,
+      "mrt_total": 77,
+      "mskt_patients": 95,
+      "mskt_total": 116,
+      "films_queued": 6,
+      "films_printed": 0,
+      "films_saved": 6,
+      "disks_burned": 0,
+      "delivered": 0,
+      "updated_at": "2026-11-11T18:00:12.331639"
+    },
     {
       "date": "2026-10-27",
       "total_patients": 0,

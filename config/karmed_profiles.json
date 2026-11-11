@@ -1,0 +1,74 @@
+{
+  "R5": {
+    "username": "R5",
+    "fullName": "Turatov Hojiakbar Shavkat ogli",
+    "loginBilgi": "m%2fn8WTjMHYd684c9O6YIxrthXa4y%2boEt%2f8LbmrryPI9hv%2fmoziaOwdPKwJWIL0urryJb1WLQ8tW4UREf7y70bdi9ylAHm9qAjzZ%2bWD8XAVpWAexxe5aFFqYd%2fVzierfxOIBbo2VIO9o0lK4nTp25M1vY1VZSclIZg8p%2bsBEAPxKyD5nAydzJpnxOdNCSCskEspksbwp3ImyA4aWwZCE8pJ3ENS4rSJWuv9JBVka9326dQ2BTC1grzH%2bpORVSbf79",
+    "lastSeen": "2026-09-10T08:34:04.747Z",
+    "isDefault": true,
+    "cookie": "KullaniciKayitlariGoster=False; SaglikKuruluOtomatikBarkod=False; KayitSonrasiOtomatikBarkodBas=True; DokunmatikGrid=False; AgentDevrede=True; YpBarkodTuru=0; YpBarkodYazici=XP-80C (copy 1); KimlikBarkodYazici=XP-80C (copy 1); YatisBarkodYazici=XP-80C (copy 1); HastaBileklikYazici=XP-80C (copy 1); BebekBarkodYazici=XP-80C (copy 1); TaburcuBarkodYazici=XP-80C (copy 1); KanGrubuBarkodYazici=XP-80C (copy 1); PolBarkodAdeti=0; YatBarkodAdeti=0; InfuzyonBarkodAdeti=0; YatTaburcuBarkodAdeti=0; LabBarkodYazici=XP-80C (copy 1); RaporlaIcinYazici=XP-80C (copy 1); OkuyucuId=; PolAktifHastaGorunmeSuresi=0; DisMonKayanYazi=; ext-L1=o%3A; ext-F_1_19=o%3A; ext-F_1_2=o%3A; ext-F_1_5=o%3A; ext-F_1_24=o%3A; ext-F_1_18=o%3A; ext-F_1_4=o%3A; ext-F_1_20=o%3A; ext-F_1_25=o%3A; ext-F_1_13=o%3A; ext-F_1_62=o%3A; ext-F_1_22=o%3A; ext-F_1_73=o%3A; ext-F_1_100=o%3A; ext-F_1_63=o%3A; ext-L3=o%3A; ext-F_3_6=o%3A; ext-F_3_29=o%3A; ext-F_3_30=o%3A; ext-F_3_11=o%3A; ext-F_3_9=o%3A; ext-F_3_58=o%3A; ext-F_3_95=o%3A; ext-F_3_10=o%3A; ext-F_3_53=o%3A; ext-F_3_12=o%3A; ext-F_3_54=o%3A; KrmdCultureInfo=uz-UZ; ASP.NET_SessionId=30l3iarvqpzedx4oosshnavo"
+  },
+  "R": {
+    "username": "R",
+    "fullName": "Foydalanuvchi (R5)",
+    "loginBilgi": "N1ab2%2fhFy2jyZ6D4Rvwcev8xVvWnC4jI3jJfCQC0QwAYP4mQvJxAnj%2bERnOY0z3dXh7dg9TdtyPr79AH7rfGsA0Y56ULBCHDMZ5XijmCMAhxIN4q2eoOEOZaOn24Au4WYCZbi1fZbkKNwwQA5zYLatUqtFGwKzFFoJcL1zXbmw6A4YS4ekFoXFld3eNY0XHwmui6DRoQg0%2f2Q78AeZD0V031skfElPu4HR9ypXW8lIrP0sUtmOha46bHK%2bTwg6aM",
+    "cookie": "KullaniciKayitlariGoster=False; SaglikKuruluOtomatikBarkod=False; KayitSonrasiOtomatikBarkodBas=False; DokunmatikGrid=False; AgentDevrede=True; YpBarkodTuru=0; YpBarkodYazici=XP-80C (copy 1); KimlikBarkodYazici=XP-80C (copy 1); YatisBarkodYazici=XP-80C (copy 1); HastaBileklikYazici=XP-80C (copy 1); BebekBarkodYazici=XP-80C (copy 1); TaburcuBarkodYazici=XP-80C (copy 1); KanGrubuBarkodYazici=XP-80C (copy 1); PolBarkodAdeti=0; YatBarkodAdeti=0; InfuzyonBarkodAdeti=0; YatTaburcuBarkodAdeti=0; LabBarkodYazici=XP-80C (copy 1); RaporlaIcinYazici=XP-80C (copy 1); OkuyucuId=; PolAktifHastaGorunmeSuresi=0; DisMonKayanYazi=; RBYS_AktifYaziciAdi_2=XP-80C (copy 1); RBYS_AktifYaziciAdi_3=XP-80C (copy 1); RBYS_AktifYaziciAdi_4=XP-80C (copy 1); RBYS_AktifYaziciAdi_1=XP-80C (copy 1); KrmdCultureInfo=uz-UZ; ASP.NET_SessionId=dkigmaek3oepzx1otzyc0y03",
+    "lastSeen": "2026-09-09T09:49:01.977Z",
+    "isDefault": false
+  },
+  "R1": {
+    "username": "R1",
+    "fullName": "Foydalanuvchi (R5)",
+    "loginBilgi": "N1ab2%2fhFy2jyZ6D4Rvwcev8xVvWnC4jI3jJfCQC0QwAYP4mQvJxAnj%2bERnOY0z3dXh7dg9TdtyPr79AH7rfGsA0Y56ULBCHDMZ5XijmCMAgoszCmFyNh6piYxdo0sdrEDHzn5G0MKIFEmM6wXmKSqnFELBkSRdbs8b1dmNGzlMZ1gsw47JUZTu1L6Gwcp%2f5IsUvjWrRZ4KeoofeXoIbrldIneqUd8K9iGK1QHA7dFqlX2Z%2fokzWuhUH76uC1jzgR",
+    "cookie": "KullaniciKayitlariGoster=False; SaglikKuruluOtomatikBarkod=False; KayitSonrasiOtomatikBarkodBas=False; DokunmatikGrid=False; AgentDevrede=True; YpBarkodTuru=0; YpBarkodYazici=XP-80C (copy 1); KimlikBarkodYazici=XP-80C (copy 1); YatisBarkodYazici=XP-80C (copy 1); HastaBileklikYazici=XP-80C (copy 1); BebekBarkodYazici=XP-80C (copy 1); TaburcuBarkodYazici=XP-80C (copy 1); KanGrubuBarkodYazici=XP-80C (copy 1); PolBarkodAdeti=0; YatBarkodAdeti=0; InfuzyonBarkodAdeti=0; YatTaburcuBarkodAdeti=0; LabBarkodYazici=XP-80C (copy 1); RaporlaIcinYazici=XP-80C (copy 1); OkuyucuId=; PolAktifHastaGorunmeSuresi=0; DisMonKayanYazi=; RBYS_AktifYaziciAdi_2=XP-80C (copy 1); RBYS_AktifYaziciAdi_3=XP-80C (copy 1); RBYS_AktifYaziciAdi_4=XP-80C (copy 1); RBYS_AktifYaziciAdi_1=XP-80C (copy 1); KrmdCultureInfo=uz-UZ; ASP.NET_SessionId=dkigmaek3oepzx1otzyc0y03",
+    "lastSeen": "2026-09-09T09:48:05.423Z",
+    "isDefault": false
+  },
+  "R18": {
+    "username": "R18",
+    "fullName": "Pazliyev Sardor",
+    "loginBilgi": "N1ab2%2fhFy2jyZ6D4Rvwcev8xVvWnC4jI3jJfCQC0QwAYP4mQvJxAnj%2bERnOY0z3dXh7dg9TdtyPr79AH7rfGsA0Y56ULBCHDMZ5XijmCMAiaSfKEHNlCpbYNfF2fzcZkeFbICjHQs1HuhCT2%2fLyBqYUEnjZdbAMbuLIZR90Mukp6JYKYC%2fwkdirbwRljNIiOXTtuYedvEl0cgPk0PuBFHHV8Mu0BPB34asjrphJNm94o9NXCrOEjDIS8ZdWpBJf7",
+    "cookie": "ASP.NET_SessionId=rgatdv3zbqnf3mcnqohmiyt3",
+    "lastSeen": "2026-09-09T10:06:14.085Z",
+    "isDefault": false
+  },
+  "H": {
+    "username": "H",
+    "fullName": "Foydalanuvchi (R5)",
+    "loginBilgi": "m%2fn8WTjMHYd684c9O6YIxrthXa4y%2boEt%2f8LbmrryPI9hv%2fmoziaOwdPKwJWIL0urryJb1WLQ8tW4UREf7y70baM7eEpGCZ78fvha32%2bUX%2fbr%2bPZSMhcb2ugVxaTGnYWL7IChh7pj%2bQE23Ycsdl%2b3JxVzxOQfEsf%2f%2b4sP9e7fClk0E3lnqZg1%2bztuyNcyaXqqDTuzx0QJz3jRiabsMO8%2bEXRatsx9YkjVFsu1lw1wLudZF5QOMk44T6ND47PYglhF",
+    "cookie": "KullaniciKayitlariGoster=False; SaglikKuruluOtomatikBarkod=False; KayitSonrasiOtomatikBarkodBas=False; DokunmatikGrid=False; AgentDevrede=True; YpBarkodTuru=0; YpBarkodYazici=XP-80C (copy 1); KimlikBarkodYazici=XP-80C (copy 1); YatisBarkodYazici=XP-80C (copy 1); HastaBileklikYazici=XP-80C (copy 1); BebekBarkodYazici=XP-80C (copy 1); TaburcuBarkodYazici=XP-80C (copy 1); KanGrubuBarkodYazici=XP-80C (copy 1); PolBarkodAdeti=0; YatBarkodAdeti=0; InfuzyonBarkodAdeti=0; YatTaburcuBarkodAdeti=0; LabBarkodYazici=XP-80C (copy 1); RaporlaIcinYazici=XP-80C (copy 1); OkuyucuId=; PolAktifHastaGorunmeSuresi=0; DisMonKayanYazi=; RBYS_AktifYaziciAdi_2=XP-80C (copy 1); RBYS_AktifYaziciAdi_3=XP-80C (copy 1); RBYS_AktifYaziciAdi_4=XP-80C (copy 1); RBYS_AktifYaziciAdi_1=XP-80C (copy 1); ASP.NET_SessionId=ziztifxmecer0jsnjydvwnct; KrmdCultureInfo=uz-UZ",
+    "lastSeen": "2026-09-09T09:08:29.817Z",
+    "isDefault": false
+  },
+  "HM": {
+    "username": "HM",
+    "fullName": "Foydalanuvchi (R5)",
+    "loginBilgi": "m%2fn8WTjMHYd684c9O6YIxrthXa4y%2boEt%2f8LbmrryPI9hv%2fmoziaOwdPKwJWIL0urryJb1WLQ8tW4UREf7y70baM7eEpGCZ78fvha32%2bUX%2fbr%2bPZSMhcb2ugVxaTGnYWL7IChh7pj%2bQE23Ycsdl%2b3JxVzxOQfEsf%2f%2b4sP9e7fClk0E3lnqZg1%2bztuyNcyaXqqDTuzx0QJz3jRiabsMO8%2bEXRatsx9YkjVFsu1lw1wLudZF5QOMk44T6ND47PYglhF",
+    "cookie": "KullaniciKayitlariGoster=False; SaglikKuruluOtomatikBarkod=False; KayitSonrasiOtomatikBarkodBas=False; DokunmatikGrid=False; AgentDevrede=True; YpBarkodTuru=0; YpBarkodYazici=XP-80C (copy 1); KimlikBarkodYazici=XP-80C (copy 1); YatisBarkodYazici=XP-80C (copy 1); HastaBileklikYazici=XP-80C (copy 1); BebekBarkodYazici=XP-80C (copy 1); TaburcuBarkodYazici=XP-80C (copy 1); KanGrubuBarkodYazici=XP-80C (copy 1); PolBarkodAdeti=0; YatBarkodAdeti=0; InfuzyonBarkodAdeti=0; YatTaburcuBarkodAdeti=0; LabBarkodYazici=XP-80C (copy 1); RaporlaIcinYazici=XP-80C (copy 1); OkuyucuId=; PolAktifHastaGorunmeSuresi=0; DisMonKayanYazi=; RBYS_AktifYaziciAdi_2=XP-80C (copy 1); RBYS_AktifYaziciAdi_3=XP-80C (copy 1); RBYS_AktifYaziciAdi_4=XP-80C (copy 1); RBYS_AktifYaziciAdi_1=XP-80C (copy 1); ASP.NET_SessionId=ziztifxmecer0jsnjydvwnct; KrmdCultureInfo=uz-UZ",
+    "lastSeen": "2026-09-09T09:08:29.830Z",
+    "isDefault": false
+  },
+  "HM3": {
+    "username": "HM3",
+    "fullName": "Foydalanuvchi (R5)",
+    "loginBilgi": "m%2fn8WTjMHYd684c9O6YIxrthXa4y%2boEt%2f8LbmrryPI9hv%2fmoziaOwdPKwJWIL0urryJb1WLQ8tW4UREf7y70baM7eEpGCZ78fvha32%2bUX%2fbr%2bPZSMhcb2ugVxaTGnYWL7IChh7pj%2bQE23Ycsdl%2b3JxVzxOQfEsf%2f%2b4sP9e7fClk0E3lnqZg1%2bztuyNcyaXqqDTuzx0QJz3jRiabsMO8%2bEXRatsx9YkjVFsu1lw1wLudZF5QOMk44T6ND47PYglhF",
+    "cookie": "KullaniciKayitlariGoster=False; SaglikKuruluOtomatikBarkod=False; KayitSonrasiOtomatikBarkodBas=False; DokunmatikGrid=False; AgentDevrede=True; YpBarkodTuru=0; YpBarkodYazici=XP-80C (copy 1); KimlikBarkodYazici=XP-80C (copy 1); YatisBarkodYazici=XP-80C (copy 1); HastaBileklikYazici=XP-80C (copy 1); BebekBarkodYazici=XP-80C (copy 1); TaburcuBarkodYazici=XP-80C (copy 1); KanGrubuBarkodYazici=XP-80C (copy 1); PolBarkodAdeti=0; YatBarkodAdeti=0; InfuzyonBarkodAdeti=0; YatTaburcuBarkodAdeti=0; LabBarkodYazici=XP-80C (copy 1); RaporlaIcinYazici=XP-80C (copy 1); OkuyucuId=; PolAktifHastaGorunmeSuresi=0; DisMonKayanYazi=; RBYS_AktifYaziciAdi_2=XP-80C (copy 1); RBYS_AktifYaziciAdi_3=XP-80C (copy 1); RBYS_AktifYaziciAdi_4=XP-80C (copy 1); RBYS_AktifYaziciAdi_1=XP-80C (copy 1); ASP.NET_SessionId=ziztifxmecer0jsnjydvwnct; KrmdCultureInfo=uz-UZ",
+    "lastSeen": "2026-09-09T09:08:30.533Z",
+    "isDefault": false
+  },
+  "HM30": {
+    "username": "HM30",
+    "fullName": "Foydalanuvchi (R5)",
+    "loginBilgi": "m%2fn8WTjMHYd684c9O6YIxrthXa4y%2boEt%2f8LbmrryPI9hv%2fmoziaOwdPKwJWIL0urryJb1WLQ8tW4UREf7y70baM7eEpGCZ78fvha32%2bUX%2fbr%2bPZSMhcb2ugVxaTGnYWL7IChh7pj%2bQE23Ycsdl%2b3JxVzxOQfEsf%2f%2b4sP9e7fClk0E3lnqZg1%2bztuyNcyaXqqDTuzx0QJz3jRiabsMO8%2bEXRatsx9YkjVFsu1lw1wLudZF5QOMk44T6ND47PYglhF",
+    "cookie": "KullaniciKayitlariGoster=False; SaglikKuruluOtomatikBarkod=False; KayitSonrasiOtomatikBarkodBas=False; DokunmatikGrid=False; AgentDevrede=True; YpBarkodTuru=0; YpBarkodYazici=XP-80C (copy 1); KimlikBarkodYazici=XP-80C (copy 1); YatisBarkodYazici=XP-80C (copy 1); HastaBileklikYazici=XP-80C (copy 1); BebekBarkodYazici=XP-80C (copy 1); TaburcuBarkodYazici=XP-80C (copy 1); KanGrubuBarkodYazici=XP-80C (copy 1); PolBarkodAdeti=0; YatBarkodAdeti=0; InfuzyonBarkodAdeti=0; YatTaburcuBarkodAdeti=0; LabBarkodYazici=XP-80C (copy 1); RaporlaIcinYazici=XP-80C (copy 1); OkuyucuId=; PolAktifHastaGorunmeSuresi=0; DisMonKayanYazi=; RBYS_AktifYaziciAdi_2=XP-80C (copy 1); RBYS_AktifYaziciAdi_3=XP-80C (copy 1); RBYS_AktifYaziciAdi_4=XP-80C (copy 1); RBYS_AktifYaziciAdi_1=XP-80C (copy 1); ASP.NET_SessionId=ziztifxmecer0jsnjydvwnct; KrmdCultureInfo=uz-UZ",
+    "lastSeen": "2026-09-09T09:08:30.696Z",
+    "isDefault": false
+  },
+  "HM306": {
+    "username": "HM306",
+    "fullName": "Foydalanuvchi (R5)",
+    "loginBilgi": "N1ab2%2fhFy2jyZ6D4Rvwcev8xVvWnC4jI3jJfCQC0QwAYP4mQvJxAnj%2bERnOY0z3dXh7dg9TdtyPr79AH7rfGsA0Y56ULBCHDMZ5XijmCMAgoszCmFyNh6piYxdo0sdrEDHzn5G0MKIFEmM6wXmKSqnFELBkSRdbs8b1dmNGzlMZ1gsw47JUZTu1L6Gwcp%2f5IsUvjWrRZ4KeoofeXoIbrldIneqUd8K9iGK1QHA7dFqlX2Z%2fokzWuhUH76uC1jzgR",
+    "cookie": "KullaniciKayitlariGoster=False; SaglikKuruluOtomatikBarkod=False; KayitSonrasiOtomatikBarkodBas=False; DokunmatikGrid=False; AgentDevrede=True; YpBarkodTuru=0; YpBarkodYazici=XP-80C (copy 1); KimlikBarkodYazici=XP-80C (copy 1); YatisBarkodYazici=XP-80C (copy 1); HastaBileklikYazici=XP-80C (copy 1); BebekBarkodYazici=XP-80C (copy 1); TaburcuBarkodYazici=XP-80C (copy 1); KanGrubuBarkodYazici=XP-80C (copy 1); PolBarkodAdeti=0; YatBarkodAdeti=0; InfuzyonBarkodAdeti=0; YatTaburcuBarkodAdeti=0; LabBarkodYazici=XP-80C (copy 1); RaporlaIcinYazici=XP-80C (copy 1); OkuyucuId=; PolAktifHastaGorunmeSuresi=0; DisMonKayanYazi=; RBYS_AktifYaziciAdi_2=XP-80C (copy 1); RBYS_AktifYaziciAdi_3=XP-80C (copy 1); RBYS_AktifYaziciAdi_4=XP-80C (copy 1); RBYS_AktifYaziciAdi_1=XP-80C (copy 1); KrmdCultureInfo=uz-UZ; ASP.NET_SessionId=dkigmaek3oepzx1otzyc0y03",
+    "lastSeen": "2026-09-09T09:48:03.105Z",
+    "isDefault": false
+  }
+}

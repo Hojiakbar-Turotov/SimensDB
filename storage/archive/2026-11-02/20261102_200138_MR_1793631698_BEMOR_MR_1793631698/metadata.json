@@ -1,0 +1,33 @@
+{
+  "job_uid": "MR_1793631698_25659768",
+  "calling_aet": "AWP190948",
+  "created_at": "2026-11-02T20:01:38.628810",
+  "patient": {
+    "patient_id": "MR_1793631698",
+    "patient_name": "BEMOR_MR_1793631698",
+    "patient_dob": "",
+    "patient_gender": "",
+    "study_date": "",
+    "study_time": "",
+    "protocol_no": ""
+  },
+  "film": {
+    "format": "STANDARD\\1,1",
+    "size": "14INX17IN",
+    "orientation": "PORTRAIT",
+    "copies": 1,
+    "cols": 1,
+    "rows": 1,
+    "total_frames": 1
+  },
+  "frames": [
+    {
+      "position": 1,
+      "rows": 4858,
+      "columns": 4104,
+      "bits_stored": 12,
+      "dcm_file": "images/frame_01.dcm",
+      "png_file": "images/frame_01.png"
+    }
+  ]
+}

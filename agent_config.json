@@ -1,0 +1,30 @@
+{
+  "agent": {
+    "clinic_name": "SAMARQAND VILOYAT ONKOLOGIYA DISPANSERI",
+    "modality_name": "SIEMENS MAGNETOM ALTEA (MRT 2)",
+    "listen_ip": "0.0.0.0",
+    "listen_port": 1005,
+    "ae_title": "DRYPIX2"
+  },
+  "security": {
+    "encryption_key": "RESPUBLIKA_ONKO_MASTER_KEY_2026"
+  },
+  "admin_connection": {
+    "direct_url": "http://10.34.14.33:3000/api/relay/push",
+    "prefer_direct": true
+  },
+  "github_relay": {
+    "enabled": false,
+    "repo": "",
+    "token": "",
+    "branch": "main",
+    "queue_dir": "queue",
+    "status_file": "admin_status.json",
+    "github_io_url": "",
+    "ttl_minutes": 60
+  },
+  "storage": {
+    "outbox_dir": "agent_storage/outbox",
+    "sent_dir": "agent_storage/sent"
+  }
+}
